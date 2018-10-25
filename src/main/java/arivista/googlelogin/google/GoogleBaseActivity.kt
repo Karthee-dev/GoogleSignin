@@ -7,7 +7,7 @@ import android.view.Window
 import arivista.googlelogin.google.utils.AuthData
 import arivista.googlelogin.google.utils.SocialUser
 
-public abstract class GoogleBaseActivity : AppCompatActivity() {
+public abstract  class GoogleBaseActivity : AppCompatActivity() {
     protected abstract val authData: AuthData
 
     override fun onCreate(savedInstanceState: Bundle?) {

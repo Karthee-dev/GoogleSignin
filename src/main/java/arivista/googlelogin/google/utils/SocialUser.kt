@@ -1,6 +1,6 @@
 package arivista.googlelogin.google.utils
 
-class SocialUser {
+public class SocialUser {
 
     lateinit var userId: String
     lateinit var accessToken: String

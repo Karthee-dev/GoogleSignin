@@ -6,23 +6,23 @@ import arivista.googlelogin.google.utils.AuthDataHolder
 import arivista.googlelogin.google.utils.Initializer
 
 
- public object GoogleAuth {
-  @JvmStatic
-  fun connectGoogle(scopes: List<String> = listOf(), listener: AuthCallback) {
-    AuthDataHolder.instance.googleAuthData = AuthData(scopes, listener)
-    GoogleAuthActivity.start(Initializer.context)
-  }
+public final object GoogleAuth {
+    @JvmStatic
+    fun connectGoogle(scopes: List<String> = listOf(), listener: AuthCallback) {
+        AuthDataHolder.instance.googleAuthData = AuthData(scopes, listener)
+        GoogleAuthActivity.start(Initializer.context)
+    }
 
-  @JvmStatic
-  fun disconnectGoogle() {
-    AuthDataHolder.instance.googleAuthData = null
-    GoogleAuthActivity.setGoogleDisconnectRequested(Initializer.context,true)
-  }
+    @JvmStatic
+    fun disconnectGoogle() {
+        AuthDataHolder.instance.googleAuthData = null
+        GoogleAuthActivity.setGoogleDisconnectRequested(Initializer.context, true)
+    }
 
-  @JvmStatic
-  fun revokeGoogle() {
-    GoogleAuthActivity.setGoogleRevokeRequested(Initializer.context,true)
-  }
+    @JvmStatic
+    fun revokeGoogle() {
+        GoogleAuthActivity.setGoogleRevokeRequested(Initializer.context, true)
+    }
 
 //  @JvmStatic
 //  fun connectFacebook(scopes: List<String> = listOf(), listener: AuthCallback) {

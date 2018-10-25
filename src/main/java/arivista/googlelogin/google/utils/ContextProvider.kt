@@ -8,7 +8,7 @@ import android.net.Uri
 /**
  * Created by Karthee on 24/10/18.
  */
-class ContextProvider : ContentProvider() {
+public class ContextProvider : ContentProvider() {
 
 
     override fun insert(p0: Uri, p1: ContentValues?): Uri? {

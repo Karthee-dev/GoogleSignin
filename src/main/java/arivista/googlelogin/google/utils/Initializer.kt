@@ -4,6 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 
 @SuppressLint("StaticFieldLeak")
-object Initializer {
+public object Initializer {
   lateinit var context: Context
 }

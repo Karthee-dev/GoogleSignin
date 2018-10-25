@@ -1,6 +1,6 @@
 package arivista.googlelogin.google.utils
 
-class AuthDataHolder private constructor() {
+public class AuthDataHolder private constructor() {
 
     var googleAuthData: AuthData? = null
 

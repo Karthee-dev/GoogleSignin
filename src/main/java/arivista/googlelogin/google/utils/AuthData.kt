@@ -2,7 +2,7 @@ package arivista.googlelogin.google.utils
 
 import java.util.*
 
-class AuthData(scopes: List<String>, callback: AuthCallback) {
+public class AuthData(scopes: List<String>, callback: AuthCallback) {
     val scopes: List<String>
     internal var callback: AuthCallback? = null
         private set
