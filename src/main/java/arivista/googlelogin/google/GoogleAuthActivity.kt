@@ -10,9 +10,9 @@ import android.text.TextUtils
 import arivista.googlelogin.BuildConfig
 import arivista.googlelogin.google.utils.DialogFactory
 import arivista.googlelogin.google.utils.PreferenceUtils
-import arivista.login.utils.AuthData
-import arivista.login.utils.AuthDataHolder
-import arivista.login.utils.SocialUser
+import arivista.googlelogin.google.utils.AuthData
+import arivista.googlelogin.google.utils.AuthDataHolder
+import arivista.googlelogin.google.utils.SocialUser
 
 import com.google.android.gms.auth.GoogleAuthUtil
 import com.google.android.gms.auth.api.Auth
@@ -26,7 +26,8 @@ import com.google.android.gms.common.api.Scope
 
 import java.util.*
 
-class GoogleAuthActivity : GoogleBaseActivity(), GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
+public class GoogleAuthActivity : GoogleBaseActivity(), GoogleApiClient.OnConnectionFailedListener, GoogleApiClient
+.ConnectionCallbacks {
 
     private var googleApiClient: GoogleApiClient? = null
     private var retrySignIn: Boolean = false

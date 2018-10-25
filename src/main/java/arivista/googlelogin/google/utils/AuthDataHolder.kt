@@ -1,4 +1,4 @@
-package arivista.login.utils
+package arivista.googlelogin.google.utils
 
 class AuthDataHolder private constructor() {
 

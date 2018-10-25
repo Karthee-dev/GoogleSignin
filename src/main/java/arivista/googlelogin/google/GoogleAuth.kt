@@ -1,12 +1,12 @@
 package arivista.googlelogin.google
 
+import arivista.googlelogin.google.utils.AuthCallback
+import arivista.googlelogin.google.utils.AuthData
+import arivista.googlelogin.google.utils.AuthDataHolder
 import arivista.googlelogin.google.utils.Initializer
-import arivista.login.utils.AuthCallback
-import arivista.login.utils.AuthData
-import arivista.login.utils.AuthDataHolder
 
 
-object GoogleAuth {
+ public object GoogleAuth {
   @JvmStatic
   fun connectGoogle(scopes: List<String> = listOf(), listener: AuthCallback) {
     AuthDataHolder.instance.googleAuthData = AuthData(scopes, listener)
