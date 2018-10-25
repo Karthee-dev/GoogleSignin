@@ -17,7 +17,7 @@ android {
 
     buildTypes {
         debug{
-            buildConfigField('String', 'googleWebClientId', '"1001282692527-nkhoo5ldn4142l8ijoi4c27qel9pu85o.apps.googleusercontent.com"')
+            buildConfigField('String', 'googleWebClientId', '"yourwebclientid"')
 
         }
         release {
