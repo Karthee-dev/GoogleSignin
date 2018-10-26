@@ -24,25 +24,5 @@ public final object GoogleAuth {
         GoogleAuthActivity.setGoogleRevokeRequested(Initializer.context, true)
     }
 
-//  @JvmStatic
-//  fun connectFacebook(scopes: List<String> = listOf(), listener: AuthCallback) {
-//    AuthDataHolder.instance.facebookAuthData = AuthData(scopes, listener)
-//    FacebookAuthActivity.start(MyApplication.context)
-//  }
-//
-//  @JvmStatic
-//  fun disconnectFacebook() {
-//    AuthDataHolder.instance.facebookAuthData = null
-//    LoginManager.getInstance().logOut()
-//  }
-//
-//  @JvmStatic
-//  fun revokeFacebook(callback: RevokeCallback? = null) {
-//    GraphRequest(AccessToken.getCurrentAccessToken(),
-//            "/me/permissions/", null, HttpMethod.DELETE
-//    ) { _ ->
-//      disconnectFacebook()
-//      callback?.onRevoked()
-//    }.executeAsync()
-//  }
+
 }
